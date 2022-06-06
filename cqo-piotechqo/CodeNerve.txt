@@ -1,13 +1,13 @@
 <span id="a">codeqo@gmail.com</span>:<span id="b">~</span><span id="c">$</span> cd giao luu code/<!-- kjsdfhkjdhsfkjdshfkj -->About_Us
 <span id="a">coderqo@gmail.com</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->thongtin.txt<br/><br/>
-My favorite code quote, "<span id="k">Code for Everyone</span>". <!-- sjkfhskjf -->
+Thông tin chi tiết về buổi giao hữu giải thuật giữa, "<span id="k">Coder QO và PiO Tech QO</span>". <!-- sjkfhskjf -->
 
-Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
-<p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
-<p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
-<p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a> <br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.</p>
+Hình thức: Trong thời gian 40p hai đội xây dựng đề cho đối thủ giải (Đề thi xây dựng theo cơ cấu đề thi HSG tin 11 cụm QO-TT). Với mỗi câu hỏi đội ra đề chuẩn bị 5 test.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>Sau khi có đề, hai đội làm bài trong 120p.</p>
+<p>Ngôn ngữ được sử dụng: c, c++, python, java, pascal. Các đội được phép sử dụng nhiều ngôn ngữ trong 1 bài thi</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
+<p>Thi đấu theo nhóm - mỗi nhóm có 5 thành viên. Tất cả các thành viên trong nhóm cùng nhau thảo luận để đưa ra<a href="link"> đáp án</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
+<p>Cách chấm điểm: Đúng mỗi bộ test sẽ được 20% số điểm cả bài.<br><br><br>Trường hợp hai đội bằng nhau đội nào có thời gian chạy test nhanh hơn sẽ giành chiến thắng. <a href="link"> Đội chiến thắng sẽ giành được Cer của đội chiến thắng, tất cả thành viên tham dự cũng sẽ nhận được giây chứng nhận ứng với kết quả của đội</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
+<p> Thời gian: buổi giao hữu dự kiến được tổ chức trong tháng 7 hoặc tháng 8, để biết thêm thông tin bạn liên hệ: <br> <a href="https://www.facebook.com/coderqo">Page Coder QO</a> <br> <a href="fb.com/hieuka.Fan">Nguyễn Ngọc Hiêu - Trưởng ban tổ chức</a> and <br> <a href="https://www.facebook.com/duong.tranminh.9277">Trần Minh Dương - Founder PiO Tech QO</a>.</p>
 
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at<!-- longlonglongcomment --><a href="Your email ID">Email</a>.
+Cảm ơn quan tâm cho sự kiện và đọc hết<!-- slightdelayhere-->, Nếu có góp ý gì cho sự kiện bạn có thể gưi mail đến<!-- longlonglongcomment --><a href="https://www.google.com/intl/vi/gmail/about/#inbox">coderqo@gmail.com</a>.
 
-<p>Cheers!</p>
+<p>Team Coder QO!</p>

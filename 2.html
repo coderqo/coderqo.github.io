@@ -1,0 +1,190 @@
+<h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="GII__S_KHO_QUC_GIA_TIN_HC_TR_CNG_CQO_NGY_TH_NHT_0"></a>GIẢI ĐỀ SƠ KHẢO QUỐC GIA TIN HỌC TRẺ CÙNG C-QO NGÀY THỨ NHẤT</h2>
+<h3 class="code-line" data-line-start=1 data-line-end=2 ><a id="Cu_1_1"></a>Câu 1</h3>
+<p class="has-line-data" data-line-start="2" data-line-end="3"><strong><a href="https://oj.vnoi.info/pdf/b4188706-5c74-4bd5-a344-6f509d205671.pdf"> Nhấp vào đây để mở đề bài</a></strong></p>
+<h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="cch_to_hm_con_trong_python_6"></a><strong><em>cách tạo hàm con trong python</em></strong></h3>
+<p class="has-line-data" data-line-start="8" data-line-end="9">giải xử muốn tạo hàm con a + b</p>
+<pre><code class="has-line-data" data-line-start="10" data-line-end="14" class="language-python=">def ab(a, b):
+    c = a+ b
+    return c
+</code></pre>
+<p class="has-line-data" data-line-start="15" data-line-end="16">hamf con kiem tra so pre</p>
+<pre><code class="has-line-data" data-line-start="17" data-line-end="25" class="language-python=">def pre(a):
+    for i in range( 2, sqrt(a)):
+        if a% i==0:
+            return False
+    return True
+n = int(input())
+if(kt(n)==True): print('la so nt')
+</code></pre>
+<h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="n_test_1_26"></a>ăn test 1:</h2>
+<p class="has-line-data" data-line-start="27" data-line-end="28"><strong><em>full code Python</em></strong></p>
+<pre><code class="has-line-data" data-line-start="29" data-line-end="47" class="language-python=">def pre(a):
+    for i in range( 2, sqrt(a)):
+        if a% i==0:
+            return False
+    return True
+t = int(input())
+for i in range(t):
+    listsnt = []
+    n = int(input())
+    for i in range(1, n + 1):
+        if (pre(i) == True): listsnt.append(i)
+    for u in range(0,len(listsnt) -2):
+        tichsnt = listsnt[u] * listsnt[u + 1]
+        if(tichsnt &lt;= n): kq = n - tichsnt
+        else: break;
+    print(kq)
+    
+</code></pre>
+<p class="has-line-data" data-line-start="47" data-line-end="48"><strong><em>code la lá thế thôi chứ mình chưa test nên có thể không chạy được nhé</em></strong></p>
+<h2 class="code-line" data-line-start=48 data-line-end=49 ><a id="n_test_2_48"></a>ăn test 2</h2>
+<h3 class="code-line" data-line-start=49 data-line-end=50 ><a id="_tng_49"></a>ý tưởng</h3>
+<ul>
+<li class="has-line-data" data-line-start="50" data-line-end="51">để ăn được test 2 bài này chúng ta cần sử dụng <strong>sàng nguyên tố</strong>.</li>
+<li class="has-line-data" data-line-start="51" data-line-end="54">Còn lại tương tự ý tưởng khi ăn test 1.<br>
+Tai lieu: <a href="https://vnoi.info/wiki/translate/he/Number-Theory-2.md">Sang Nguyen To nguồn VNOJ</a></li>
+</ul>
+<p class="has-line-data" data-line-start="54" data-line-end="55"><strong>code c++</strong></p>
+<pre><code class="has-line-data" data-line-start="56" data-line-end="108" class="language-c=">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define e 31700
+int t[317001];
+vector&lt;int&gt; v;
+void sangnt()
+{
+    // so 1 ung voi no la snt
+    //so 0 ung voi ko phai snt
+    for(int i = 1; i &lt;=e; i++)
+    {
+        t[i] = 1;
+    }
+    t[0] = t[1] = 0;
+    for(int i = 2; i*i &lt;= e; i ++)
+    {
+        if(t[i] == 1)
+        {
+            for(int j = i *i; j &lt;= e; j = j +i)
+            {
+                t[j] = 0;
+            }
+        }
+    }
+    for(int i = 1; i &lt;= e; i++)
+    {
+        if(t[i] == 1)
+            v.push_back(i);
+    }
+    
+}
+void nhap()
+{
+    int m, kq;
+    cin &gt;&gt; m;
+    for(int i = 1; i &lt;= m; i ++)
+    {
+        int n; cin &gt;&gt; n;
+        for(int j = 0; j &lt; v.size() - 1; j++)
+        {
+            if(v[j] * v[j + 1] &lt;= n) kq = n - (v[j] * v[j + 1]);
+            else break;
+        }
+        cout &lt;&lt; kq &lt;&lt; endl;
+    }
+}
+main()
+{
+    sangnt();
+    nhap();
+}
+</code></pre>
+<p class="has-line-data" data-line-start="108" data-line-end="109"><strong><em>Giari thích một chút về hàm push_back</em></strong></p>
+<ul>
+<li class="has-line-data" data-line-start="109" data-line-end="110">Trong c++ thì push_back no tương tự như append trong python nhé</li>
+</ul>
+<pre><code class="has-line-data" data-line-start="111" data-line-end="120" class="language-c=">// Giai thich 1 chut ve ham push_back()
+v ={}
+v.push_back(5);
+v={5}
+v.push_back(1832);
+v={5, 1832};
+v[0]=5
+v[1] = 1832
+</code></pre>
+<h2 class="code-line" data-line-start=122 data-line-end=123 ><a id="test_3_122"></a>test 3</h2>
+<pre><code class="has-line-data" data-line-start="124" data-line-end="176" class="language-c=">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define e 1000044
+#define endl &quot;\n&quot;
+using namespace std;
+int v[e];
+vector&lt;int&gt; snt;
+main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0); cout.tie(0);
+    for(int i = 1; i &lt;= e; i++)
+    {
+        v[i] = 1;
+    }
+    v[1] = 0;
+    for(int i = 2; i *i  &lt;= e; i++)
+    {
+        if( v[i] == 1 )
+        {
+            for(int j = i * i; j &lt;= e; j = j + i)
+            {
+                v[j] = 0;
+            }
+        }
+    }
+    for(int i = 2; i &lt;= e; i++)
+    {
+        if(v[i] == 1) snt.push_back(i);
+    }
+    int t, kq;
+    cin &gt;&gt; t;
+    while( t-- )
+    {
+        int n; cin &gt;&gt; n;
+        int d = 0, c = snt.size() - 1;
+        while (d &lt;= c)
+        {
+            int g = (d + c)/2;
+            if(snt[g] * snt[g + 1] &lt;= n)
+            {
+                kq = n- snt[g] * snt[g + 1] ;
+                d = g + 1;
+            }
+            else c = g - 1;
+            
+        }
+        cout &lt;&lt; kq &lt;&lt; endl;
+    }
+}
+
+</code></pre>
+<p class="has-line-data" data-line-start="177" data-line-end="178"><strong>Dấu hiệu một bài toán có thể dùng tìm kiếm nhị phân</strong></p>
+<ol>
+<li class="has-line-data" data-line-start="178" data-line-end="180">Hầu như ất cả các bài toán có tập kết quả có dạng như sau ta đều có thể dùng giải thuật tìm kiếm nhị phân:<br>
+<strong><em>true , true, true, true,… true, false, false, false, false,…</em></strong></li>
+<li class="has-line-data" data-line-start="180" data-line-end="182">Chỉ những bài toán có thứ tự mới có thể dùng tìm kiếm nhị phân.</li>
+</ol>
+<h3 class="code-line" data-line-start=182 data-line-end=183 ><a id="ham_timf_kiem_nhi_phan_182"></a>ham timf kiem nhi phan</h3>
+<pre><code class="has-line-data" data-line-start="184" data-line-end="201" class="language-c=">int n;
+cin &gt;&gt; n;
+int d = 0;
+int c = v.size() - 1;
+int kq;
+while(d &lt;= c)
+{
+    int g = (d+ c)/2;
+    if(v[g]&lt;= n)
+    {
+        kq = n - v[g];
+        d = g + 1;
+    }
+    else c = g - 1;
+}
+cout &lt;&lt; kq &lt;&lt; endl;
+</code></pre>
+<p class="has-line-data" data-line-start="201" data-line-end="202">1 2 3 4 5 6 7 8</p>

@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>coderqo.github.io</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="coderqo.github.io" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://coderqo.github.io/" />
+<meta property="og:url" content="https://coderqo.github.io/" />
+<meta property="og:site_name" content="coderqo.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="coderqo.github.io" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"coderqo.github.io","name":"coderqo.github.io","url":"https://coderqo.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=f4fb890a52fd887a72aec960b4ca654d89ee2e24">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Chun_b_cho_bui_train_th_2_0"></a>Chuẩn bị cho buổi train thứ 2</h1>
+<h3 class="code-line" data-line-start=1 data-line-end=2 ><a id="ni_dung_1"></a>nội dung:</h3>
+<ul>
+<li class="has-line-data" data-line-start="2" data-line-end="3">Chữa đề</li>
+<li class="has-line-data" data-line-start="3" data-line-end="4">Tập viết md</li>
+</ul>
+<p class="has-line-data" data-line-start="8" data-line-end="12">kết quả có thể là 1, …8<br>
+khoảng cách càng dễ thì sác xuất để có thể xếp đc 3 khu quân sự càng cao<br>
+suy ra tập kết quả có dạng<br>
+true, true, true,…true false, dfalse, …flase</p>
+<pre><code class="has-line-data" data-line-start="15" data-line-end="96" class="language-c=">include &lt;bits/stdc++.h&gt;
+using namespace std;
+int n, m, t[99999+ 5], d , c, g;
+void nhap()
+{
+    cin &gt;&gt; n &gt;&gt; m;
+    for(int i = 1; i &lt;= n; i ++)
+    {
+        cin &gt;&gt; t[i];
+    }
+    sort(t + 1, t + 1 + n);
+    c = t[n];
+}
+bool check(int z)
+{
+    int i = 1, j = 2;
+    int ans = 0;
+    while(i &lt;= n &amp;&amp; j &lt;= n)
+    {
+        if(t[j] - t[i] &gt;= z)
+        {
+            i = j;
+            j ++;
+            ans ++;
+        }
+        else j ++; 
+    }
+    if(ans &gt;= m - 1 ) return true;
+    else return false;
+}
+void xuli()
+{
+    d = 1;
+    while(d &lt;= c)
+    {
+        int g = (d + c)/2;
+        if(check(g) == true)
+        {
+            kq = g;
+            d = g + 1;
+        }
+        else c = g - 1;
+        
+    }
+    cout &lt;&lt; kq;
+}
+main()
+{
+    nhap();
+    xuli();
+}
+
+void xuli()
+{
+    for(int i = 1; i &lt;= c ; i ++)
+    {
+        if(check(i) == false) 
+        {
+            kq = i - 1;
+            break;
+        }
+    }
+    cout &lt;&lt; kq;
+}
+
+
+
+//giải sử là vector 
+vector &lt;int &gt; v;
+void nhap()
+{
+    cin &gt;&gt; n&gt;&gt; m;
+    for(int i = 1; i &lt;= n; i ++)
+    {
+        int a; cin &gt;&gt; a;
+        v.push_back(a);
+    }
+    sort(v.begin(), v.end());
+}
+    
+</code></pre>
+<p class="has-line-data" data-line-start="96" data-line-end="101">nếu như mà chúng ta không cộng 1 thì nó sẽ sort từ giá trị đầu tiên của mảng<br>
+thì chỉ số đầu tiên của mảng là 0<br>
+t[0] = 0<br>
+! xin chao<br>
+!!!xin chao</p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

@@ -7,14 +7,14 @@
 ### ***cách tạo hàm con trong python***
 
 giải xử muốn tạo hàm con a + b
-```python=
+```python
 def ab(a, b):
     c = a+ b
     return c
 ```
 
 hamf con kiem tra so pre
-```python=
+```python
 def pre(a):
     for i in range( 2, sqrt(a)):
         if a% i==0:
@@ -26,7 +26,7 @@ if(kt(n)==True): print('la so nt')
 
 ## ăn test 1:
 ***full code Python***
-```python=
+```python
 def pre(a):
     for i in range( 2, sqrt(a)):
         if a% i==0:
@@ -53,7 +53,7 @@ for i in range(t):
 Tai lieu: [Sang Nguyen To nguồn VNOJ](https://vnoi.info/wiki/translate/he/Number-Theory-2.md)
 
 **code c++**
-```c=
+```c
 #include<bits/stdc++.h>
 using namespace std;
 #define e 31700
@@ -108,7 +108,7 @@ main()
 ```
 ***Giari thích một chút về hàm push_back***
 * Trong c++ thì push_back no tương tự như append trong python nhé
-```c=
+```c
 // Giai thich 1 chut ve ham push_back()
 v ={}
 v.push_back(5);
@@ -121,7 +121,7 @@ v[1] = 1832
 
 
 ## test 3
-```c=
+```c
 #include<bits/stdc++.h>
 #define int long long
 #define e 1000044
@@ -181,7 +181,7 @@ main()
 2. Chỉ những bài toán có thứ tự mới có thể dùng tìm kiếm nhị phân.
 
 ### ham timf kiem nhi phan
-```c=
+```c
 int n;
 cin >> n;
 int d = 0;

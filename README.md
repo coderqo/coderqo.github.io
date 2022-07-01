@@ -1,205 +1,42 @@
-## GIẢI ĐỀ SƠ KHẢO QUỐC GIA TIN HỌC TRẺ CÙNG C-QO NGÀY THỨ NHẤT 
-### Câu 1
-**[ Nhấp vào đây để mở đề bài](https://oj.vnoi.info/pdf/b4188706-5c74-4bd5-a344-6f509d205671.pdf)**
+# THÔNG TIN CHI TIẾT CP 22
+## **THÔNG TIN**
+### ***Địa điểm :***
+* *PGD Huyện Quốc Oai*
 
+### ***Thời gian :*** 
+* 8 giờ ngày 8/7/2022
 
+$\to $  các thành viên thi đấu và ban tổ chức đến trược 30p
+### ***Hình thức :***
+* 8h $\to$ 9h Hai đội sáng tạo đề bài và up bài lên hệ thống **VNOI**, hết 9 h gửi bài cho MC và MC chiếu đề của 2 đội lên máy chiếu.
+* 9h10 $\to$ 11h10p Hai đội cùng nhau thảo luận làm đề
+* 11h20 $\to$ 11h30 Kiểm tra kết quả ( Nếu hai đội bằng điểm nhau MC có trách nghiệm share đề dự bị do cô Hiền cung cấp thời gian làm đề dự bị là 20p $\to$ thời gian về sau m.n công thêm 25p).
+* 11h32  $\to$ 11h40 Trao giải, giấy chứng nhận tham gia sự kiện cho tất cả thành viên 2 đội thi, giấy chứng nhận cống hiến cho các thành viên còn lại và MC.
+* 12h $\to \infty
+$ Hai đội đi dự tiệc tổng kết.
+## **CHUYÊN MÔN**
+### ***Toán :***
+* **Tất cả kiến thức** toán từ lớp 1 $\to$ lớp 11
+* Và **Logarit** lớp 12
+### ***Lập trình :***
+1. Với python: 
+    * **không** được **import** thư viện nào **ngoài sys và math**.
+    * Được sử dụng tất cả hàm mà bạn biết
+2. Với c++ : Không có giới hạn gì.
+3. Thời gian chạy 1 test: Tối đa 1s
+4. Nộp bài: 
+    * Với bài 1, 2 đội được nộp **tối đa 5 lần**.
+    * 3 bài còn lại: Các đội chỉ được nộp **Tối đa 2 lần**
+    * $\to$ kết quả được lấy là lần nộp có điểm **cao nhất**
+5. Lưu ý:
 
-### ***cách tạo hàm con trong python***
-
-giải xử muốn tạo hàm con a + b
-```python
-def ab(a, b):
-    c = a+ b
-    return c
 ```
-
-hamf con kiem tra so pre
-```python
-def pre(a):
-    for i in range( 2, sqrt(a)):
-        if a% i==0:
-            return False
-    return True
-n = int(input())
-if(kt(n)==True): print('la so nt')
+Trong quá trình làm thí sinh của 2 đội chỉ được sử dụng IDE OFFLINE và tab online duy nhất là VNOI 
 ```
-
-## ăn test 1:
-***full code Python***
-```python
-def pre(a):
-    for i in range( 2, sqrt(a)):
-        if a% i==0:
-            return False
-    return True
-t = int(input())
-for i in range(t):
-    listsnt = []
-    n = int(input())
-    for i in range(1, n + 1):
-        if (pre(i) == True): listsnt.append(i)
-    for u in range(0,len(listsnt) -2):
-        tichsnt = listsnt[u] * listsnt[u + 1]
-        if(tichsnt <= n): kq = n - tichsnt
-        else: break;
-    print(kq)
+    Suôt quá trình làm bài 2 đội thi được phép qua lại 2 bên thi đấu của nhau.
     
-```
-***code la lá thế thôi chứ mình chưa test nên có thể không chạy được nhé***
-## ăn test 2
-### ý tưởng
-* để ăn được test 2 bài này chúng ta cần sử dụng **sàng nguyên tố**.
-* Còn lại tương tự ý tưởng khi ăn test 1.
-Tai lieu: [Sang Nguyen To nguồn VNOJ](https://vnoi.info/wiki/translate/he/Number-Theory-2.md)
-
-**code c++**
-```c
-#include<bits/stdc++.h>
-using namespace std;
-#define e 31700
-int t[317001];
-vector<int> v;
-void sangnt()
-{
-    // so 1 ung voi no la snt
-    //so 0 ung voi ko phai snt
-    for(int i = 1; i <=e; i++)
-    {
-        t[i] = 1;
-    }
-    t[0] = t[1] = 0;
-    for(int i = 2; i*i <= e; i ++)
-    {
-        if(t[i] == 1)
-        {
-            for(int j = i *i; j <= e; j = j +i)
-            {
-                t[j] = 0;
-            }
-        }
-    }
-    for(int i = 1; i <= e; i++)
-    {
-        if(t[i] == 1)
-            v.push_back(i);
-    }
-    
-}
-void nhap()
-{
-    int m, kq;
-    cin >> m;
-    for(int i = 1; i <= m; i ++)
-    {
-        int n; cin >> n;
-        for(int j = 0; j < v.size() - 1; j++)
-        {
-            if(v[j] * v[j + 1] <= n) kq = n - (v[j] * v[j + 1]);
-            else break;
-        }
-        cout << kq << endl;
-    }
-}
-main()
-{
-    sangnt();
-    nhap();
-}
-```
-***Giari thích một chút về hàm push_back***
-* Trong c++ thì push_back no tương tự như append trong python nhé
-```c
-// Giai thich 1 chut ve ham push_back()
-v ={}
-v.push_back(5);
-v={5}
-v.push_back(1832);
-v={5, 1832};
-v[0]=5
-v[1] = 1832
-```
 
 
-## test 3
-```c
-#include<bits/stdc++.h>
-#define int long long
-#define e 1000044
-#define endl "\n"
-using namespace std;
-int v[e];
-vector<int> snt;
-main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
-	for(int i = 1; i <= e; i++)
-    {
-        v[i] = 1;
-    }
-	v[1] = 0;
-	for(int i = 2; i *i  <= e; i++)
-	{
-		if( v[i] == 1 )
-		{
-			for(int j = i * i; j <= e; j = j + i)
-			{
-			    v[j] = 0;
-			}
-		}
-	}
-	for(int i = 2; i <= e; i++)
-	{
-	    if(v[i] == 1) snt.push_back(i);
-	}
-	int t, kq;
-	cin >> t;
-	while( t-- )
-	{
-		int n; cin >> n;
-		int d = 0, c = snt.size() - 1;
-		while (d <= c)
-		{
-			int g = (d + c)/2;
-			if(snt[g] * snt[g + 1] <= n)
-			{
-				kq = n- snt[g] * snt[g + 1] ;
-				d = g + 1;
-			}
-			else c = g - 1;
-			
-		}
-		cout << kq << endl;
-	}
-}
-
-```
-
-**Dấu hiệu một bài toán có thể dùng tìm kiếm nhị phân**
-1. Hầu như ất cả các bài toán có tập kết quả có dạng như sau ta đều có thể dùng giải thuật tìm kiếm nhị phân:
-***true , true, true, true,.... true, false, false, false, false,....***
-2. Chỉ những bài toán có thứ tự mới có thể dùng tìm kiếm nhị phân.
-
-### ham timf kiem nhi phan
-```c
-int n;
-cin >> n;
-int d = 0;
-int c = v.size() - 1;
-int kq;
-while(d <= c)
-{
-    int g = (d+ c)/2;
-    if(v[g]<= n)
-    {
-        kq = n - v[g];
-        d = g + 1;
-    }
-    else c = g - 1;
-}
-cout << kq << endl;
-```
-1 2 3 4 5 6 7 8 
-
-
-
+## Một số hình ảnh về địa điểm thi đấu:
+![Anhr 1](https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/290563398_736806934224162_7834964191131748919_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=YgFT3KGxGbkAX-eSynI&_nc_ht=scontent.fhan5-1.fna&oh=03_AVJemOPNW_oSzIawVB9SCfrQEL3nQk-699fK-cwmO-t5Yw&oe=62E50CDE)
+![2](https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.15752-9/290492520_1690090471343978_5871997769744233551_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Mhgc0OxirAAAX_bia7O&_nc_ht=scontent.fsgn5-1.fna&oh=03_AVLhlvf5rxXEvHHl_cvHyCSbpvUKMsXJ7RTjwRljreVIWw&oe=62E64331)

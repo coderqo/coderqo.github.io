@@ -1,42 +1,166 @@
-# THÔNG TIN CHI TIẾT CP 22
-## **THÔNG TIN**
-### ***Địa điểm :***
-* *PGD Huyện Quốc Oai*
+# ĐÁN ÁN CHÍNH THỨC CONTEST ĐẦU NHIỆM KÌ 2022 CODER QO
 
-### ***Thời gian :*** 
-* 8 giờ ngày 8/7/2022
+#### Câu 1: Dãy ký tự (TT)
 
-$\to $  các thành viên thi đấu và ban tổ chức đến trược 30p
-### ***Hình thức :***
-* 8h $\to$ 9h Hai đội sáng tạo đề bài và up bài lên hệ thống **VNOI**, hết 9 h gửi bài cho MC và MC chiếu đề của 2 đội lên máy chiếu.
-* 9h10 $\to$ 11h10p Hai đội cùng nhau thảo luận làm đề
-* 11h20 $\to$ 11h30 Kiểm tra kết quả ( Nếu hai đội bằng điểm nhau MC có trách nghiệm share đề dự bị do cô Hiền cung cấp thời gian làm đề dự bị là 20p $\to$ thời gian về sau m.n công thêm 25p).
-* 11h32  $\to$ 11h40 Trao giải, giấy chứng nhận tham gia sự kiện cho tất cả thành viên 2 đội thi, giấy chứng nhận cống hiến cho các thành viên còn lại và MC.
-* 12h $\to \infty
-$ Hai đội đi dự tiệc tổng kết.
-## **CHUYÊN MÔN**
-### ***Toán :***
-* **Tất cả kiến thức** toán từ lớp 1 $\to$ lớp 11
-* Và **Logarit** lớp 12
-### ***Lập trình :***
-1. Với python: 
-    * **không** được **import** thư viện nào **ngoài sys và math**.
-    * Được sử dụng tất cả hàm mà bạn biết
-2. Với c++ : Không có giới hạn gì.
-3. Thời gian chạy 1 test: Tối đa 1s
-4. Nộp bài: 
-    * Với bài 1, 2 đội được nộp **tối đa 5 lần**.
-    * 3 bài còn lại: Các đội chỉ được nộp **Tối đa 2 lần**
-    * $\to$ kết quả được lấy là lần nộp có điểm **cao nhất**
-5. Lưu ý:
+* Code python
+```python
+import sys
+import math
+
+sys.stdin  = open("DKT.INP", "r")
+sys.stdout = open("DKT.OUT", "w")
+n = int(input())
+ans = int(((n - 1) * n)/2 + 1) + n
+
+res = ans % 26
+
+a = ord("A")
+
+print(chr(a + res - 1))
 
 ```
-Trong quá trình làm thí sinh của 2 đội chỉ được sử dụng IDE OFFLINE và tab online duy nhất là VNOI 
+* Toán: 
+E
+
+#### Câu 2: Cờ caro (TO)
+
+X chắc chắn sẽ thắng nêu đi theo lần lượt các bước sau:
+***5M. 8M. 7L. 10i. 12i.***
+
+#### Câu 3: Bất đẳng thức (TO)
+Giải: sử dụng BĐT AM - GM và Cauchy - Schwarz.
+![](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/302100572_2878666765775138_2186801667467384793_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LU5GCaL7zQkAX9nIL4w&_nc_ht=scontent.fhan15-1.fna&oh=03_AVKlBeym23ZqAbT30NehfcTnFHLbkEyJwNvTPKZp4MFYzA&oe=633B1DCB)
+#### Câu 4: Trộn màu
+c++
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int t[999999];
+main()
+{
+    int k;
+    cin >> k;
+    while(k--)
+    {
+        int n; cin >> n;
+        for(int i = 1; i <= n; i++)
+            cin >> t[i];
+        sort(t + 1, t + 1 + n);
+        int ans = 0;
+        for(int i=1; i <= n; i++)
+            if(t[i] == t[i+1]) ans++;
+        cout << ans << endl;
+        ans = 0;
+    }
+}
 ```
-    Suôt quá trình làm bài 2 đội thi được phép qua lại 2 bên thi đấu của nhau.
+#### Câu 5: Nối điểm
+c++
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define float double
+const int ll = 999999;
+int n, t[ll], dp[ll], dd[ll];
+void enter()
+{
+    cin >> n;
+    for(int i = 1; i <= n; i++) cin >> t[i];
+}
+void build()
+{
+    dp[1] = 1;
+    dd[1] = t[1];
+    for(int i = 2; i <= n; i++)
+    {
+        int ans = 0;
+        for(int j = 1; j <= i - 1; j++)
+        {
+            if(t[j] < t[i] && dp[j] > dp[ans]) ans = j;
+        }
+        dp[i] = dp[ans] + 1;
+    }
+    sort(dp + 1, dp + 1 + n, greater<int>());
+    cout << dp[1];
+}
+main()
+{
+    enter();
+    build();
+}
+```
+
+#### Câu 6: Con đường đến nhà hàng
+
+c++
+```cpp
+#include<bits/stdc++.h>
+#define endl "\n"
+#define s second
+#define f first
+#define int long long
+#define float double
+using namespace std;
+const int ll = 1e5 + 10, oo = 1e7 + 10;
+int n, a[ll],  m, res = 0;
+bool visited[ll];
+vector<int> adj[ll];
+void dfs(int u, int so_con_meo){
+    visited[u] = true;
+    if(so_con_meo > m){
+        return;
+    }
+    int check_la = 1;
+    for(auto e: adj[u]){
+        if(!visited[e]){
+            visited[e] = true;
+            check_la = 0;
+            if(a[e] == 1){
+                dfs(e, so_con_meo + 1);
+            }
+            else{
+                dfs(e, 0);
+            }
+        }
+    }
     
+    res += (check_la == 1);
+    
+   // cout << res << " " << so_con_meo <<" " <<check_la<<" " << u<< endl;
+}
+void enter(){
+    cin >> n >> m;
+    for(int i = 1; i <= n; i++){
+        cin >> a[i];
+    }
+    for(int i = 1; i <= n - 1; i++){
+        int u, v; cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+}
+void build(){
+    dfs(1, a[1]);
+    cout << res;
+}
+signed main(){
+   // freopen("a.inp", "r", stdin);
+  //  freopen("a.out", "w", stdout);
+    ios_base::sync_with_stdio(false);
+    cin.tie(0); cout.tie(0);
+    enter();
+    build();
+}
+```
 
+#### Câu 7: Hình học
 
-## Một số hình ảnh về địa điểm thi đấu:
-![Anhr 1](https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/290563398_736806934224162_7834964191131748919_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=YgFT3KGxGbkAX-eSynI&_nc_ht=scontent.fhan5-1.fna&oh=03_AVJemOPNW_oSzIawVB9SCfrQEL3nQk-699fK-cwmO-t5Yw&oe=62E50CDE)
-![2](https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.15752-9/290492520_1690090471343978_5871997769744233551_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Mhgc0OxirAAAX_bia7O&_nc_ht=scontent.fsgn5-1.fna&oh=03_AVLhlvf5rxXEvHHl_cvHyCSbpvUKMsXJ7RTjwRljreVIWw&oe=62E64331)
+Chứng minh quy nạp: Giả sử với $n$ điểm thì tồn tại ít nhất $(n - 4)$ tam giác tù.
+$\to$ Cần chứng minh: Với $(n + 1)$ điểm thì tồn tại ít nhất $(n - 3)$ tam giác tù.
+Xét $n$ điểm bất kì trong $(n + 1)$ điểm đó thì chỉ có $(n - 4)$ tam giác tù được tạo thành. Xét 1 điểm $A$ không thuộc $n$ điểm đó. Xét tập hợp các tam giác được tạo thành từ điểm $A$ với 2 trong số $n$ điểm đã cho gọi là $(H)$.
++ Nếu $(H)$ chứa 1 tam giác tù thì kết hợp với $(n - 4)$ tam giác tù được tạo thành từ $n$ điểm cho trước $\to$ $dpcm$.
++ Nếu $(H)$ không chứa tam giác tù nào $\to CMTT \to n$ điểm bất kì khác.
+$\to$ với mọi tam giác được tạo thành từ các điểm trong 2022 điểm này đều là tam giác nhọn $\to$ vô lý.
+Vậy: dpcm.
+

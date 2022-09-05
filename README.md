@@ -29,7 +29,7 @@ X chắc chắn sẽ thắng nêu đi theo lần lượt các bước sau:
 
 #### Câu 3: Bất đẳng thức (TO)
 Giải: sử dụng BĐT AM - GM và Cauchy - Schwarz.
-![](https://scontent.fhan15-1.fna.fbcdn.net/v/t1.15752-9/302100572_2878666765775138_2186801667467384793_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LU5GCaL7zQkAX9nIL4w&_nc_ht=scontent.fhan15-1.fna&oh=03_AVKlBeym23ZqAbT30NehfcTnFHLbkEyJwNvTPKZp4MFYzA&oe=633B1DCB)
+![](https://scontent.fhan15-2.fna.fbcdn.net/v/t1.15752-9/303950188_1253997475375887_4115666300314930737_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=eW8_DOKeLP0AX9VPVar&_nc_ht=scontent.fhan15-2.fna&oh=03_AVIkvv2pJAXjc8jXSJaQWOFe-4UBHoYttFKaGmBLlT21wQ&oe=633959EE)
 #### Câu 4: Trộn màu
 c++
 ```cpp

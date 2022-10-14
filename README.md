@@ -11,7 +11,7 @@ Theo ý tưởng của anh Thuần và Nguyễn Duy để gắn kết tình cả
 
 ## III. Timeline cụ thể
 1. Gấp hoa, viết thiệp: cùng làm tại **Tách cà phê** lúc 17h30p thứ 2 ngày 17/10.
-2. Địa điểm, thời gian tổ chức nói chuyện tâm sự các kiểu: 5h45 ngày 20/10.
+2. Địa điểm, thời gian tổ chức nói chuyện tâm sự các kiểu: **Tách cà phê** lúc 17h45 ngày 20/10.
 
 
 Link hướng dẫn gấp hoa mọi người có thể xem trước: [Ấn vào đây](https://www.tiktok.com/@thenkxruc?_t=8WRkviuhzH7&_r=1&fbclid=IwAR3m6rZwETNCEQPwNStpPozSKI00HLS5dv191qcqOQOIh_f9KSUWhM2Gk3Q)

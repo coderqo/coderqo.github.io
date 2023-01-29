@@ -1,5 +1,3 @@
-# Solution nhóm 4
-
 Các ký tự chuỗi được sắp xếp theo giá trị của một số nguyên được tính toán từ chuỗi. Nếu chuỗi bắt đầu với một số, giá trị số nguyên được tính bằng cách nhân mỗi chữ số với 10 và cộng với chữ số hiện tại. Nếu chuỗi không bắt đầu với một số, giá trị số nguyên được tính bằng giá trị ASCII của ký tự đầu tiên trong chuỗi.
 Sau khi tính toán giá trị số nguyên cho từng chuỗi, chương trình sử dụng thuật toán Quick Sort để sắp xếp chuỗi theo giá trị số nguyên. 
 

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>Tổng điểm: ${totalScore}</p>
             `;
         } else {
-            resultDiv.innerHTML = 'Không tìm thấy điểm thi cho mã số học sinh này.';
+            resultDiv.innerHTML = 'Không tìm thấy điểm thi cho học sinh này.';
         }
     });
 });

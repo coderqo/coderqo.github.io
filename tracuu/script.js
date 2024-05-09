@@ -97826,8 +97826,8 @@ function search() {
             <p>Họ và tên: ${student.name}</p>
             <p>Điểm môn toán: ${student.mathScore}</p>
             <p>Điểm môn văn: ${student.literatureScore}</p>
-            <p>Điểm môn anh: Đang cập nhập</p>
-            <p>Điểm tổng: Đang cập nhập </p>
+            <p>Điểm môn anh: Đang cập nhật</p>
+            <p>Điểm tổng: Đang cập nhật </p>
         `;
     } else {
         resultDiv.innerHTML = '<p>Không tìm thấy học sinh</p>';

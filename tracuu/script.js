@@ -97772,40 +97772,40 @@
 
 //
 const students = [
-    { studentId: "TT241", name: "Từ Kim Phượng", mathScore: 7.5, literatureScore: 8.25, englishScore: -1 },
-    { studentId: "TT242", name: "Nguyễn Phương Thảo", mathScore: 8.75, literatureScore: 7.75, englishScore: -1 },
-    { studentId: "TT243", name: "Phan Minh Phương", mathScore: 9, literatureScore: 7, englishScore: -1 },
-    { studentId: "TT244", name: "Đào Tiến Đạt", mathScore: 5, literatureScore: 8, englishScore: -1 },
-    { studentId: "TT245", name: "Phan Vũ Minh Thư", mathScore: 6.5, literatureScore: 8.25, englishScore: -1 },
-    { studentId: "TT246", name: "Trung Thị Thanh Vân", mathScore: 5, literatureScore: 7.25, englishScore: -1 },
-    { studentId: "TT247", name: "Nguyễn Thị Huyền Trang", mathScore: 7.75, literatureScore: 0, englishScore: -1 },
-    { studentId: "TT248", name: "Bùi Bích Phương", mathScore: 6.5, literatureScore: 7, englishScore: -1 },
-    { studentId: "TT249", name: "Nguyễn Thị Thuý Quỳnh", mathScore: 5.25, literatureScore: 8, englishScore: -1 },
-    { studentId: "TT250", name: "Lê Thị Quỳnh Trang", mathScore: 7.5, literatureScore: 7.5, englishScore: -1 },
-    { studentId: "TT251", name: "Vương Triệu Vỹ", mathScore: 2, literatureScore: 3.75, englishScore: -1 },
-    { studentId: "TT252", name: "Vũ Thị Bình Nhi", mathScore: 6.25, literatureScore: 7.25, englishScore: -1 },
-    { studentId: "TT253", name: "Nguyễn Ngọc Bảo Anh", mathScore: 0, literatureScore: 0, englishScore: -1 },
-    { studentId: "TT254", name: "Ngô Đại Dương", mathScore: 5.75, literatureScore: 7.5, englishScore: -1 },
-    { studentId: "TT255", name: "Hà Nguyễn Bảo Long", mathScore: 6.5, literatureScore: 6.75, englishScore: -1 },
-    { studentId: "TT256", name: "Nguyễn Thị Thu An", mathScore: 8.5, literatureScore: 8.25, englishScore: -1 },
-    { studentId: "TT257", name: "Vương Khánh Ly", mathScore: 5, literatureScore: 8.25, englishScore: -1 },
-    { studentId: "TT258", name: "Nguyễn Thị Kiều Oanh", mathScore: 5, literatureScore: 6.75, englishScore: -1 },
-    { studentId: "TT259", name: "Hoàng Duy Khoa", mathScore: 7.25, literatureScore: 8.4, englishScore: -1 },
-    { studentId: "TT260", name: "Nguyễn Thị Anh Tâm", mathScore: 6.5, literatureScore: 6.75, englishScore: -1 },
-    { studentId: "TT261", name: "Hoàng Gia Minh", mathScore: 9.25, literatureScore: 7.75, englishScore: -1 },
-    { studentId: "TT262", name: "Nguyễn Ngọc Ánh Dương", mathScore: 5.75, literatureScore: 8.5, englishScore: -1 },
-    { studentId: "TT263", name: "Phạm Kim Phụng", mathScore: 7.25, literatureScore: 7, englishScore: -1 },
-    { studentId: "TT264", name: "Nguyễn Minh Trí", mathScore: 6.75, literatureScore: 6.5, englishScore: -1 },
-    { studentId: "TT265", name: "Nguyễn Thị Xuân Oanh", mathScore: 0, literatureScore: 0, englishScore: -1 },
-    { studentId: "TT266", name: "Kiều Hoàng Minh Tâm", mathScore: 9.5, literatureScore: 7.75, englishScore: -1 },
-    { studentId: "TT267", name: "Đặng Kiều Phương Linh", mathScore: 8.75, literatureScore: 8, englishScore: -1 },
-    { studentId: "TT268", name: "Nguyễn Danh Huy", mathScore: 7.5, literatureScore: 8, englishScore: -1 },
-    { studentId: "TT269", name: "Vương Trường Giang", mathScore: 9.5, literatureScore: 6.75, englishScore: -1 },
-    { studentId: "TT270", name: "Nguyễn Văn Bảo Nam", mathScore: 0, literatureScore: 0, englishScore: -1 },
-    { studentId: "TT271", name: "Lê Duy Khánh", mathScore: 8, literatureScore: 7.25, englishScore: -1 },
-    { studentId: "TT272", name: "Nguyễn Thị Tường Vi", mathScore: 9, literatureScore: 7.75, englishScore: -1 },
-    { studentId: "TT274", name: "Nguyễn Viết Quang Minh", mathScore: 8, literatureScore: 6.5, englishScore: -1 },
-    { studentId: "TT275", name: "Nguyễn Hữu Hiếu", mathScore: 7.25, literatureScore: 6.75, englishScore: -1 }
+    { studentId: "TT241", name: "Từ Kim Phượng", mathScore: 7.5, literatureScore: 8.25, englishScore: 4.75 },
+    { studentId: "TT242", name: "Nguyễn Phương Thảo", mathScore: 8.75, literatureScore: 7.75, englishScore: 8.5 },
+    { studentId: "TT243", name: "Phan Minh Phương", mathScore: 9, literatureScore: 7, englishScore: 8.5 },
+    { studentId: "TT244", name: "Đào Tiến Đạt", mathScore: 5, literatureScore: 8, englishScore: 3.25 },
+    { studentId: "TT245", name: "Phan Vũ Minh Thư", mathScore: 6.5, literatureScore: 8.25, englishScore: 6.25 },
+    { studentId: "TT246", name: "Trung Thị Thanh Vân", mathScore: 5, literatureScore: 7.25, englishScore: 7.75 },
+    { studentId: "TT247", name: "Nguyễn Thị Huyền Trang", mathScore: 7.75, literatureScore: 0, englishScore: 0 },
+    { studentId: "TT248", name: "Bùi Bích Phương", mathScore: 6.5, literatureScore: 7, englishScore: 5.25 },
+    { studentId: "TT249", name: "Nguyễn Thị Thuý Quỳnh", mathScore: 5.25, literatureScore: 8, englishScore: 7.25 },
+    { studentId: "TT250", name: "Lê Thị Quỳnh Trang", mathScore: 7.5, literatureScore: 7.5, englishScore: 6.75 },
+    { studentId: "TT251", name: "Vương Triệu Vỹ", mathScore: 2, literatureScore: 3.75, englishScore: 2.5 },
+    { studentId: "TT252", name: "Vũ Thị Bình Nhi", mathScore: 6.25, literatureScore: 7.25, englishScore: 6.75 },
+    { studentId: "TT253", name: "Nguyễn Ngọc Bảo Anh", mathScore: 0, literatureScore: 0, englishScore: 0 },
+    { studentId: "TT254", name: "Ngô Đại Dương", mathScore: 5.75, literatureScore: 7.5, englishScore: 6.75 },
+    { studentId: "TT255", name: "Hà Nguyễn Bảo Long", mathScore: 6.5, literatureScore: 6.75, englishScore: 5.25},
+    { studentId: "TT256", name: "Nguyễn Thị Thu An", mathScore: 8.5, literatureScore: 8.25, englishScore: 8.25 },
+    { studentId: "TT257", name: "Vương Khánh Ly", mathScore: 5, literatureScore: 8.25, englishScore: 5.5 },
+    { studentId: "TT258", name: "Nguyễn Thị Kiều Oanh", mathScore: 5, literatureScore: 6.75, englishScore: 0 },
+    { studentId: "TT259", name: "Hoàng Duy Khoa", mathScore: 7.25, literatureScore: 8.4, englishScore: 6 },
+    { studentId: "TT260", name: "Nguyễn Thị Anh Tâm", mathScore: 6.5, literatureScore: 6.75, englishScore: 3.25 },
+    { studentId: "TT261", name: "Hoàng Gia Minh", mathScore: 9.25, literatureScore: 7.75, englishScore: 8.25 },
+    { studentId: "TT262", name: "Nguyễn Ngọc Ánh Dương", mathScore: 5.75, literatureScore: 8.5, englishScore: 6 },
+    { studentId: "TT263", name: "Phạm Kim Phụng", mathScore: 7.25, literatureScore: 7, englishScore: 7.25 },
+    { studentId: "TT264", name: "Nguyễn Minh Trí", mathScore: 6.75, literatureScore: 6.5, englishScore: 6.5 },
+    { studentId: "TT265", name: "Nguyễn Thị Xuân Oanh", mathScore: 0, literatureScore: 0, englishScore: 0 },
+    { studentId: "TT266", name: "Kiều Hoàng Minh Tâm", mathScore: 9.5, literatureScore: 7.75, englishScore: 8.5 },
+    { studentId: "TT267", name: "Đặng Kiều Phương Linh", mathScore: 8.75, literatureScore: 8, englishScore: 7 },
+    { studentId: "TT268", name: "Nguyễn Danh Huy", mathScore: 7.5, literatureScore: 8, englishScore: 7.75 },
+    { studentId: "TT269", name: "Vương Trường Giang", mathScore: 9.5, literatureScore: 6.75, englishScore: 8.25 },
+    { studentId: "TT270", name: "Nguyễn Văn Bảo Nam", mathScore: 0, literatureScore: 0, englishScore: 0 },
+    { studentId: "TT271", name: "Lê Duy Khánh", mathScore: 8, literatureScore: 7.25, englishScore: 8.25 },
+    { studentId: "TT272", name: "Nguyễn Thị Tường Vi", mathScore: 9, literatureScore: 7.75, englishScore: 6.75 },
+    { studentId: "TT274", name: "Nguyễn Viết Quang Minh", mathScore: 8, literatureScore: 6.5, englishScore: 8.75 },
+    { studentId: "TT275", name: "Nguyễn Hữu Hiếu", mathScore: 7.25, literatureScore: 6.75, englishScore: 5.75 }
 ];
 
 function search() {
@@ -97826,8 +97826,8 @@ function search() {
             <p>Họ và tên: ${student.name}</p>
             <p>Điểm môn toán: ${student.mathScore}</p>
             <p>Điểm môn văn: ${student.literatureScore}</p>
-            <p>Điểm môn anh: Đang cập nhật</p>
-            <p>Điểm tổng: Đang cập nhật </p>
+            <p>Điểm môn anh: ${student.englishScore}</p>
+            <p>Total Score: ${totalScore}</p>
         `;
     } else {
         resultDiv.innerHTML = '<p>Không tìm thấy học sinh</p>';

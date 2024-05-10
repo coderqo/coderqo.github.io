@@ -97827,7 +97827,7 @@ function search() {
             <p>Điểm môn toán: ${student.mathScore}</p>
             <p>Điểm môn văn: ${student.literatureScore}</p>
             <p>Điểm môn anh: ${student.englishScore}</p>
-            <p>Total Score: ${totalScore}</p>
+            <p>Điểm tổng: ${totalScore}</p>
         `;
     } else {
         resultDiv.innerHTML = '<p>Không tìm thấy học sinh</p>';

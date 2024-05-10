@@ -21,6 +21,9 @@ Một số hoạt động đáng chú ý của CLB.
 - Giải 3 cuộc thi Huế ICT 2024
 
 ----------------------------------------
+
 CLB LẬP TRÌNH CODER QO
+
 ➤ Fanpage: https://www.facebook.com/coderqo
-➤ Email: coderqo@gmail.com Ẩn bớt
+
+➤ Email: coderqo@gmail.com 
